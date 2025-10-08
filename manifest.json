@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Classification et analyse d'adresses blockchain EVM",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
