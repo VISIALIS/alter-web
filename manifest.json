@@ -1,6 +1,6 @@
 {
-    "name": "alter",
-    "short_name": "alter",
+    "name": "Alter",
+    "short_name": "Alter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
