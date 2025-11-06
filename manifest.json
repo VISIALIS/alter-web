@@ -1,11 +1,11 @@
 {
-    "name": "Alter",
+    "name": "Alter - Décryptez n'importe quelle adresse blockchain",
     "short_name": "Alter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Classification et analyse d'adresses blockchain EVM",
+    "description": "Identifiez portefeuilles, tokens et contrats blockchain en un clic",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
