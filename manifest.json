@@ -5,9 +5,19 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Identifiez portefeuilles, tokens et contrats blockchain en un clic",
+    "description": "Classification instantanee d'adresses EVM. Aussi disponible en alter-cli, alter-mcp, Alter Desktop et Alter Mobile.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "related_applications": [
+        {
+            "platform": "itunes",
+            "url": "https://apps.apple.com/"
+        },
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store"
+        }
+    ],
     "icons": [
         {
             "src": "icons/Icon-192.png",

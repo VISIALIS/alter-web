@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alter.visialis.fr/sitemap.xml

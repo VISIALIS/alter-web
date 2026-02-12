@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -17,9 +17,10 @@
   <base href="/">
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alter - Easily decrypt any blockchain address</title>
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Easily decrypt any blockchain address - Identify wallets, tokens, and EVM contracts (Ethereum, Gnosis) in one click">
+  <meta name="description" content="Alter - Classification instantanee d'adresses EVM. Aussi disponible en alter-cli, alter-mcp, Alter Desktop et Alter Mobile.">
 
   <!-- GitHub Pages SPA redirect restoration -->
   <script>
@@ -42,10 +43,172 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>Alter - Easily decrypt any blockchain address</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    body {
+      margin: 0;
+      background: #f6f8fb;
+      color: #1f2937;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    #bootstrap-fallback {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 20px 36px;
+      line-height: 1.45;
+    }
+
+    #bootstrap-fallback h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    #bootstrap-fallback p {
+      margin: 0 0 18px;
+    }
+
+    #bootstrap-fallback .quickstart {
+      margin: 0 0 20px;
+      padding: 12px 14px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+    }
+
+    #bootstrap-fallback code {
+      font-size: 13px;
+    }
+
+    #bootstrap-fallback table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    #bootstrap-fallback th,
+    #bootstrap-fallback td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid #eef2f7;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    #bootstrap-fallback tr:last-child td {
+      border-bottom: 0;
+    }
+
+    #bootstrap-fallback a {
+      color: #0a58ca;
+    }
+  </style>
 </head>
 <body>
+  <main id="bootstrap-fallback">
+    <h1>Alter Web</h1>
+    <p>
+      Classification instantanee d'adresses EVM.
+      Cette page charge l'application Flutter; en attendant, voici les points d'entree utiles.
+    </p>
+
+    <section class="quickstart" aria-label="Quick Start">
+      <strong>Quick Start</strong><br/>
+      Web: <a href="https://alter.visialis.fr/">https://alter.visialis.fr/</a><br/>
+      CLI: <code>brew install VISIALIS/alter/alter-cli</code><br/>
+      MCP: <code>brew install VISIALIS/alter/alter-mcp</code>
+    </section>
+
+    <table aria-label="Ecosysteme Alter">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Interface</th>
+          <th>Type</th>
+          <th>Installation / Acces</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Alter Web</strong></td>
+          <td>Application web</td>
+          <td><a href="https://alter.visialis.fr/">https://alter.visialis.fr/</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>alter-cli</strong></td>
+          <td>CLI interactif</td>
+          <td><code>brew install VISIALIS/alter/alter-cli</code></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>alter-mcp</strong></td>
+          <td>Serveur MCP (agents IA)</td>
+          <td><code>brew install VISIALIS/alter/alter-mcp</code></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Alter Desktop</strong></td>
+          <td>Application desktop (macOS/Windows/Linux)</td>
+          <td><code>brew install --cask VISIALIS/alter/alter</code></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>Alter Mobile</strong></td>
+          <td>Application mobile (iOS/Android)</td>
+          <td><a href="https://apps.apple.com/">App Store</a> / <a href="https://play.google.com/store">Google Play</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <noscript>
+    <p>Alter est aussi disponible sur d'autres interfaces :</p>
+    <ul>
+      <li>alter-cli : <a href="https://github.com/VISIALIS/homebrew-alter#readme">brew install VISIALIS/alter/alter-cli</a></li>
+      <li>alter-mcp : <a href="https://github.com/VISIALIS/homebrew-alter#readme">brew install VISIALIS/alter/alter-mcp</a></li>
+      <li>Alter Desktop : <a href="https://github.com/VISIALIS/homebrew-alter#readme">brew install --cask VISIALIS/alter/alter</a></li>
+      <li>Alter Web : <a href="https://alter.visialis.fr/">https://alter.visialis.fr/</a></li>
+      <li>Alter Mobile : <a href="https://apps.apple.com/">App Store</a> / <a href="https://play.google.com/store">Google Play</a></li>
+    </ul>
+  </noscript>
+
+  <script>
+    // Cacher le fallback quand Flutter a pris la main.
+    (function() {
+      function hideFallback() {
+        var fallback = document.getElementById('bootstrap-fallback');
+        if (fallback) {
+          fallback.style.display = 'none';
+        }
+      }
+
+      function isFlutterMounted() {
+        return !!document.querySelector('flt-glass-pane, flutter-view');
+      }
+
+      var observer = new MutationObserver(function() {
+        if (isFlutterMounted()) {
+          hideFallback();
+          observer.disconnect();
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+
+      window.addEventListener('flutter-first-frame', hideFallback, { once: true });
+      window.addEventListener('load', function() {
+        if (isFlutterMounted()) {
+          hideFallback();
+        }
+      });
+    })();
+  </script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

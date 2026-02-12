@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alter - contracts</title>
+  <meta name="description" content="Alter - redirection vers l'application pour la route /contracts.">
+  <link rel="canonical" href="https://alter.visialis.fr/contracts">
+  <script>
+    (function() {
+      sessionStorage.redirect = location.origin + '/contracts';
+      location.replace('/');
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirection vers Alter...</p>
+</body>
+</html>
