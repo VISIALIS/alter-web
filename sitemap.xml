@@ -25,7 +25,13 @@
     <loc>https://alter.visialis.fr/observability</loc>
   </url>
   <url>
+    <loc>https://alter.visialis.fr/diagnostics</loc>
+  </url>
+  <url>
     <loc>https://alter.visialis.fr/preferences</loc>
+  </url>
+  <url>
+    <loc>https://alter.visialis.fr/release-notes</loc>
   </url>
   <url>
     <loc>https://alter.visialis.fr/terms.html</loc>
