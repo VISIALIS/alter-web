@@ -57,7 +57,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: 4 October 2025</p>
+        <p class="last-updated">Last updated: 26 June 2026</p>
         <div class="language-switch">
             <a href="privacy.html">FR</a> | <span>EN</span> | <a href="privacy_es.html">ES</a>
         </div>
@@ -81,7 +81,18 @@
             Outbound traffic is limited to public RPC endpoints configured by default or added by the user. VISIALIS does not operate proprietary servers to intercept or enrich these requests. Should VISIALIS offer its own RPC endpoint in the future, this will be clearly indicated in the application and documentation.
         </p>
         <p>
+            RPC requests transmit the user’s IP address and the blockchain addresses queried to the configured RPC node. VISIALIS does not control these third-party nodes and recommends using only trusted endpoints. The user freely chooses and configures their RPC endpoints — Alter does not impose any.
+        </p>
+        <p>
             The web version of Alter is delivered as a static application: all interactions remain within the user’s browser. No data related to the addresses viewed or wallet signatures is sent back to the hosting server.
+        </p>
+
+        <h2>On-chain Attribution Marker (ERC-8021)</h2>
+        <p>
+            Every transaction prepared by Alter contains a public attribution marker (ERC-8021 format), visible on the blockchain to anyone. This marker identifies Alter as the preparation tool — it does not reveal the user’s identity and is not signed by Alter.
+        </p>
+        <p>
+            If the user activates a premium licence (NFT), Alter reads the licence status directly from the blockchain via a read-only RPC call. No licence data is transmitted to VISIALIS.
         </p>
 
         <h2>Cookies and Local Storage</h2>
@@ -102,6 +113,9 @@
         <h2>Changes</h2>
         <p>
             This policy may be updated to reflect service or legal developments.
+        </p>
+        <p>
+            Alter currently operates exclusively in local mode. If a hosted mode is introduced in the future, a dedicated privacy policy will be published and the user will be explicitly informed before any activation.
         </p>
     </div>
 </body>

@@ -57,7 +57,7 @@
 <body>
     <div class="container">
         <h1>Politique de confidentialité</h1>
-        <p class="last-updated">Dernière mise à jour : 4 octobre 2025</p>
+        <p class="last-updated">Dernière mise à jour : 26 juin 2026</p>
         <div class="language-switch">
             <span>FR</span> | <a href="privacy_en.html">EN</a> | <a href="privacy_es.html">ES</a>
         </div>
@@ -81,7 +81,18 @@
             Les seules communications sortantes se font vers des endpoints RPC publics configurés par défaut ou ajoutés par l’utilisateur. VISIALIS n’exploite aucun serveur propriétaire pour intercepter ou enrichir ces requêtes. Si un endpoint RPC hébergé par VISIALIS est proposé à l’avenir, cette information sera clairement signalée dans l’application et dans la documentation.
         </p>
         <p>
+            Les requêtes RPC transmettent l’adresse IP de l’utilisateur et les adresses blockchain interrogées au nœud RPC configuré. VISIALIS ne contrôle pas ces nœuds tiers et recommande d’utiliser uniquement des endpoints de confiance. L’utilisateur choisit et configure librement ses endpoints RPC — Alter n’en impose aucun.
+        </p>
+        <p>
             Sur la version web, Alter est servie comme une application statique : toutes les interactions restent dans le navigateur de l’utilisateur. Aucune donnée liée aux adresses consultées ou aux signatures wallet n’est renvoyée au serveur d’hébergement.
+        </p>
+
+        <h2>Marqueur d’attribution on-chain (ERC-8021)</h2>
+        <p>
+            Toute transaction préparée par Alter contient un marqueur d’attribution public (format ERC-8021), visible sur la blockchain par quiconque. Ce marqueur identifie Alter comme outil de préparation — il ne révèle pas l’identité de l’utilisateur et n’est pas signé par Alter.
+        </p>
+        <p>
+            Si l’utilisateur active une licence premium (NFT), Alter lit l’état de cette licence directement sur la blockchain via un appel RPC en lecture. Aucune donnée de licence n’est transmise à VISIALIS.
         </p>
 
         <h2>Cookies et stockage local</h2>
@@ -102,6 +113,9 @@
         <h2>Modifications</h2>
         <p>
             Cette politique pourra être mise à jour pour refléter l’évolution du service ou du cadre légal.
+        </p>
+        <p>
+            Alter fonctionne aujourd’hui exclusivement en mode local. Si un mode hébergé est introduit à l’avenir, une politique de confidentialité dédiée sera publiée et l’utilisateur en sera explicitement informé avant toute activation.
         </p>
     </div>
 </body>
