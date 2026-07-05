@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alter.visialis.fr/</loc>
+    <loc>https://app.alter-evm.com/</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/addresses</loc>
+    <loc>https://app.alter-evm.com/addresses</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/wallets</loc>
+    <loc>https://app.alter-evm.com/wallets</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/tokens</loc>
+    <loc>https://app.alter-evm.com/tokens</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/contracts</loc>
+    <loc>https://app.alter-evm.com/contracts</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/chains</loc>
+    <loc>https://app.alter-evm.com/chains</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/governance</loc>
+    <loc>https://app.alter-evm.com/governance</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/observability</loc>
+    <loc>https://app.alter-evm.com/observability</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/diagnostics</loc>
+    <loc>https://app.alter-evm.com/diagnostics</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/preferences</loc>
+    <loc>https://app.alter-evm.com/preferences</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/release-notes</loc>
+    <loc>https://app.alter-evm.com/release-notes</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/terms.html</loc>
+    <loc>https://app.alter-evm.com/terms.html</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/privacy.html</loc>
+    <loc>https://app.alter-evm.com/privacy.html</loc>
   </url>
   <url>
-    <loc>https://alter.visialis.fr/cgu.html</loc>
+    <loc>https://app.alter-evm.com/cgu.html</loc>
   </url>
 </urlset>
