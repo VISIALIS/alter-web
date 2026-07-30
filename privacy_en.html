@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="alter-legal-version" content="2026-07-30">
         <meta name="description" content="Alter Privacy Policy — Data processing and privacy commitment.">
     <link rel="canonical" href="https://app.alter-evm.com/privacy_en.html">
     <link rel="alternate" hreflang="fr" href="https://app.alter-evm.com/privacy.html">
@@ -67,7 +68,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: 26 June 2026</p>
+        <p class="last-updated">Last updated: 30 July 2026</p>
         <div class="language-switch">
             <a href="privacy.html">FR</a> | <span>EN</span> | <a href="privacy_es.html">ES</a>
         </div>
@@ -75,57 +76,88 @@
         <h2>Data Controller</h2>
         <p>
             VISIALIS, SAS with share capital of €200,000, registered with the Paris Trade Register under number 478 885 122,<br>
-            59 rue de Ponthieu, 75008 Paris, France.
+            BUREAU 326, 59 rue de Ponthieu, 75008 Paris, France.<br>
+            Data protection contact: <a href="mailto:contact@visialis.fr">contact@visialis.fr</a>.
         </p>
 
-        <h2>General Principles</h2>
-        <ul>
-            <li>Alter does not collect, store or transmit any personally identifiable data.</li>
-            <li>The application relies exclusively on public data available through EVM-compatible RPC endpoints.</li>
-            <li>No account, identifier or subscription is required. When a user connects a wallet and signs to prove ownership of an EVM address, the cryptographic proof is stored locally on the device and never sent to VISIALIS or any third party.</li>
-        </ul>
-        <p>For contractual obligations, please review the <a href="terms_en.html">Terms of Use</a>.</p>
+        <h2>Scope and Current Local Mode</h2>
+        <p>
+            Alter currently operates locally, without a user account, a VISIALIS-operated RPC endpoint, or a remote MCP endpoint hosted by VISIALIS. Analyses, configurations and ownership proofs stay on the device unless a feature requested by the user requires direct communication with a third-party service described below.
+        </p>
+        <p>
+            In the standard local flow, EVM addresses viewed, JSON-RPC parameters and wallet signatures are not sent to VISIALIS. Alter does not hold private keys and never asks users to disclose a recovery phrase.
+        </p>
+        <p>For contractual matters, please review the <a href="terms_en.html">Terms of Use</a>.</p>
+
+        <h2>Data Processed Directly by VISIALIS</h2>
+        <p>
+            VISIALIS receives personal data only when a user voluntarily provides it, for example in a support message. This data may include the sender’s contact details, the content of the request and any attached technical material.
+        </p>
+        <p>
+            This data is used to answer the request and to secure or improve the service. Depending on the context, processing is based on performance of the request or VISIALIS’s legitimate interest in providing support and security. Support material is retained for as long as necessary to handle the request, and thereafter only for periods required by law or necessary for the establishment, exercise or defence of legal claims.
+        </p>
+
+        <h2>Web Application Hosting</h2>
+        <p>
+            The Web application is a static site hosted by <strong>GitHub Pages</strong>, a service provided by GitHub, Inc. Loading the application requires a connection to GitHub’s servers. GitHub states that it logs and stores the IP addresses of GitHub Pages visitors for security purposes, even when they are not signed into a GitHub account. This processing is governed by the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+        </p>
+        <p>
+            The application code does not send the EVM addresses viewed, RPC parameters or signature proofs to the hosting server. VISIALIS does not operate an application proxy on this route.
+        </p>
 
         <h2>Network Connections</h2>
         <p>
-            Outbound traffic is limited to public RPC endpoints configured by default or added by the user. VISIALIS does not operate proprietary servers to intercept or enrich these requests. Should VISIALIS offer its own RPC endpoint in the future, this will be clearly indicated in the application and documentation.
+            Alter routes requests directly from the device to the services required for the requested feature. VISIALIS does not intercept these communications. Depending on the features used, recipients may include:
+        </p>
+        <ul>
+            <li>public, private or self-hosted RPC endpoints selected or configured by the user;</li>
+            <li>public chain metadata services, including ChainList, when searching for or synchronising a network;</li>
+            <li>Etherscan-compatible explorer APIs when the user configures a key and enables history import;</li>
+            <li>the external wallet or signer selected when the user requests a connection or signature;</li>
+            <li>the application’s GitHub Pages server when loading static files and checking the version.</li>
+        </ul>
+        <p>
+            These third parties necessarily receive the connection IP address and the data included in the request. An RPC or explorer request may disclose the EVM addresses queried, the method called, the network, Alter’s technical identifier where permitted by the browser and, for an explorer, the API key supplied by the user.
         </p>
         <p>
-            RPC requests transmit the user’s IP address and the blockchain addresses queried to the configured RPC node. VISIALIS does not control these third-party nodes and recommends using only trusted endpoints. The user freely chooses and configures their RPC endpoints — Alter does not impose any.
-        </p>
-        <p>
-            The web version of Alter is delivered as a static application: all interactions remain within the user’s browser. No data related to the addresses viewed or wallet signatures is sent back to the hosting server.
+            Users remain free to replace or remove suggested endpoints and use their own providers. VISIALIS does not control the policies, retention periods or processing locations of providers selected by users. Some may process data outside the European Economic Area. Users should review their privacy policies before use.
         </p>
 
-        <h2>On-chain Attribution Marker (ERC-8021)</h2>
+        <h2>Public On-chain Data and Attribution Prototype</h2>
         <p>
-            Every transaction prepared by Alter contains a public attribution marker (ERC-8021 format), visible on the blockchain to anyone. This marker identifies Alter as the preparation tool — it does not reveal the user’s identity and is not signed by Alter.
+            A public blockchain address, transaction and on-chain data may be linked to a person and remain publicly accessible for an extended period. VISIALIS cannot modify or erase data already recorded on a blockchain.
         </p>
         <p>
-            If the user activates a premium licence (NFT), Alter reads the licence status directly from the blockchain via a read-only RPC call. No licence data is transmitted to VISIALIS.
+            CLI and MCP tools exposing the <code>transaction.prepare</code> prototype may append a public ERC-8021-format attribution marker to an unsigned payload; the proposal remains in draft status. Alter does not publish this marker itself. It becomes public only if the user has the payload signed by an external signer and then broadcasts the transaction. The Web application does not currently offer a workflow for preparing or publishing this marker.
         </p>
 
-        <h2>Cookies and Local Storage</h2>
+        <h2>Local Storage and Trackers</h2>
         <p>
-            The web version may store technical preferences locally (such as the status of an information banner). These data stay on the user’s device and are never transmitted to VISIALIS.
+            Alter uses device storage to provide requested features and remember, in particular, language, onboarding status, dismissed notices, settings and RPC endpoints, technical counters, history-import status and, if entered by the user, an explorer API key. Session data, addresses, results or proofs may also remain locally depending on the interface used.
+        </p>
+        <p>
+            The explorer API key is stored locally without encryption and is sent only to the explorer API when the corresponding feature is used. Users should use a dedicated key and may delete it from the settings.
+        </p>
+        <p>
+            Alter’s code does not place advertising cookies and does not include analytics or behavioural tracking tools. Functional local storage is used to provide requested features. Users may clear it through the application where a control is available, or through browser or system settings; doing so may reset the application.
         </p>
 
         <h2>Security</h2>
         <p>
-            VISIALIS recommends using trusted RPC endpoints only. If there is any doubt about a third-party endpoint, users should remove it from the configuration.
+            VISIALIS recommends using trusted RPC endpoints, explorers and wallets, never entering a private key or recovery phrase into Alter, and checking the data displayed by the wallet before signing. If there is any doubt about a third-party service, users should remove it from their configuration.
         </p>
 
-        <h2>User Rights</h2>
+        <h2>Individual Rights</h2>
         <p>
-            As no personal data is collected, there is no data enabling rights of access, rectification or erasure. For any question, please contact: <a href="mailto:contact@visialis.fr">contact@visialis.fr</a>.
+            For data actually held by VISIALIS, including support requests, individuals may request access, rectification, erasure, restriction or object where these rights apply by contacting <a href="mailto:contact@visialis.fr">contact@visialis.fr</a>. They may also lodge a complaint with the French data protection authority, the <a href="https://www.cnil.fr/">CNIL</a>.
+        </p>
+        <p>
+            Data stored only on the device is under the user’s control. Requests concerning GitHub Pages logs, an RPC provider, an explorer or a wallet must be addressed to the relevant third party. Deleting local data cannot remove data already published on a blockchain.
         </p>
 
-        <h2>Changes</h2>
+        <h2>Service and Policy Changes</h2>
         <p>
-            This policy may be updated to reflect service or legal developments.
-        </p>
-        <p>
-            Alter currently operates exclusively in local mode. If a hosted mode is introduced in the future, a dedicated privacy policy will be published and the user will be explicitly informed before any activation.
+            This policy is updated when processing activities or the legal framework change. If VISIALIS introduces an RPC endpoint, a remote MCP endpoint, an account, a payment feature or another hosted mode, the new processing activities, legal bases, retention periods, recipients and rights will be documented before activation and brought to users’ attention.
         </p>
     </div>
 </body>
