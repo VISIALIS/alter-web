@@ -63,8 +63,11 @@
   }
   </script>
 
-  <!-- Security headers are managed via HTTP headers in netlify.toml -->
-  <!-- Do NOT add CSP meta tags here — they conflict with server headers (browser applies the most restrictive) -->
+  <!-- #310 Security headers HTTP (CSP, XFO, XCTO, RP, PP, HSTS) :
+       - netlify.toml + alter/web/_headers (Netlify / Cloudflare Pages)
+       - docs/deployment/web-security-headers.md (Cloudflare devant GitHub Pages)
+       Ne PAS ajouter de CSP en <meta> ici : insuffisant pour frame-ancestors/HSTS
+       et peut entrer en conflit avec les headers serveur. -->
 
   <!-- GitHub Pages SPA redirect restoration -->
   <script>
