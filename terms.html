@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="alter-legal-version" content="2026-07-30">
+    <meta name="alter-legal-version" content="2026-09-07">
         <meta name="description" content="Conditions Générales d’Utilisation d’Alter.">
     <link rel="canonical" href="https://app.alter-evm.com/terms.html">
     <link rel="alternate" hreflang="fr" href="https://app.alter-evm.com/terms.html">
@@ -71,7 +71,7 @@
 <body>
     <div class="container">
         <h1>Conditions Générales d'Utilisation</h1>
-        <p class="last-updated">Dernière mise à jour : 30 juillet 2026 — Version contractuelle : 2026-07-30</p>
+        <p class="last-updated">Dernière mise à jour : 7 septembre 2026 — Version contractuelle : 2026-09-07</p>
         <div class="language-switch">
             <span>FR</span> | <a href="terms_en.html">EN</a> | <a href="terms_es.html">ES</a>
         </div>
@@ -83,7 +83,7 @@
         <p>En téléchargeant, installant ou utilisant l'Application, vous acceptez d'être lié par les présentes CGU. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'Application.</p>
 
         <h2>3. Description du service</h2>
-        <p>Alter est une application qui assiste les utilisateurs dans la classification et l'analyse d'adresses blockchain sur des réseaux compatibles EVM. L'Application est disponible gratuitement sur le web et via les plateformes de distribution mobile supportées.</p>
+        <p>Alter est un logiciel d’information et d’analyse qui assiste les utilisateurs dans la classification et l’exploration d’adresses et de protocoles sur des réseaux compatibles EVM. Les résultats sont fournis à titre informatif. Alter ne constitue ni un conseil en investissement, ni une recommandation personnalisée, ni un service réglementé sur crypto-actifs. Pour l’outil local, VISIALIS n’agit pas en qualité de CASP au sens du Règlement (UE) 2023/1114 (MiCA) ni de PSAN au sens du droit français. L’Application est disponible gratuitement sur le web et via les plateformes de distribution mobile supportées ; des fonctionnalités optionnelles décrites ci-après peuvent être proposées ultérieurement sous réserve des conditions et portes légales applicables.</p>
 
         <h2>4. Utilisation autorisée</h2>
         <p>Vous vous engagez à utiliser l'Application uniquement aux fins prévues et conformément aux présentes CGU. Il vous est interdit de :</p>
@@ -101,28 +101,40 @@
         <p>Les traitements de données liés à Alter sont décrits dans notre <a href="privacy.html">Politique de confidentialité</a>. En mode local standard, VISIALIS n’exploite aucun endpoint RPC et ne reçoit pas les adresses EVM ni les paramètres JSON-RPC : Alter aiguille directement les requêtes vers les services tiers choisis ou activés par l’utilisateur, qui reçoivent l’adresse IP de connexion et le contenu de la requête. VISIALIS peut traiter les données communiquées volontairement au support, tandis que l’hébergeur GitHub Pages traite notamment l’adresse IP des visiteurs du site.</p>
 
         <h2>7. Nature du service et limites techniques</h2>
-        <p>Alter est un outil d’analyse et de préparation de transactions sur les réseaux EVM. Il n’a jamais accès aux clés privées de l’utilisateur et ne signe aucune transaction.</p>
+        <p>Alter est un outil d’analyse et de préparation de transactions sur les réseaux EVM. Il n’a jamais accès aux clés privées de l’utilisateur et ne signe aucune transaction. Alter est non-custodial : VISIALIS ne détient ni clés privées ni fonds des utilisateurs.</p>
         <p>Toute signature est réalisée par un wallet (tel que MetaMask, Rabby, Frame, ou tout autre wallet compatible) ou un signer externe (tel que Ledger, Trezor, Keystone, ou tout autre hardware wallet ou remote signer) sous le contrôle de l’utilisateur ou de l’entité qu’il représente (personne physique, personne morale ou agent automatisé agissant pour son compte).</p>
-        <p>Par défaut, Alter se limite à la lecture de la blockchain. En mode expert, il peut préparer des transactions ou soumettre des transactions déjà signées via <code>eth_sendRawTransaction</code>. L’utilisateur (ou l’entité qu’il représente) conserve le contrôle exclusif sur la signature et sur la décision de diffuser ou non une transaction.</p>
+        <p>Par défaut, Alter se limite à la lecture de la blockchain. En mode expert, il peut préparer des transactions ou soumettre des transactions déjà signées via <code>eth_sendRawTransaction</code>. L’utilisateur (ou l’entité qu’il représente) conserve le contrôle exclusif sur la signature et sur la décision de diffuser ou non une transaction. Toute diffusion en mode expert requiert une confirmation explicite de l’utilisateur.</p>
         <p><strong>Activation du mode expert.</strong> Le mode expert doit être activé explicitement par l’utilisateur. Toute transaction diffusée via ce mode est irréversible une fois incluse dans la blockchain. VISIALIS n’exerce aucun contrôle sur la diffusion ni sur les effets de la transaction. L’utilisateur est seul responsable de la vérification du contenu, du destinataire et du montant avant signature et diffusion.</p>
-        <p><strong>Absence de services réglementés.</strong> Alter ne fournit aucun service de conseil en investissement, de gestion de portefeuille, de réception-transmission ou d’exécution d’ordres, de garde ou d’administration de crypto-actifs, ni aucun autre service sur crypto-actifs au sens du Règlement (UE) 2023/1114 (MiCA). Les informations affichées par Alter sont des données factuelles issues de la blockchain, fournies à titre informatif uniquement, et ne constituent ni une recommandation personnalisée, ni une incitation à acquérir, céder ou conserver un quelconque actif. L’utilisateur prend ses décisions de manière autonome et sous sa seule responsabilité.</p>
+        <p><strong>Absence de services réglementés.</strong> Alter ne fournit aucun service de conseil en investissement, de gestion de portefeuille, de réception-transmission ou d’exécution d’ordres, de garde ou d’administration de crypto-actifs, ni aucun autre service sur crypto-actifs au sens du Règlement (UE) 2023/1114 (MiCA). Pour l’outil local, VISIALIS n’est ni CASP ni PSAN. Les informations affichées par Alter sont des données factuelles issues de la blockchain, fournies à titre informatif uniquement, et ne constituent ni une recommandation personnalisée, ni une incitation à acquérir, céder ou conserver un quelconque actif. L’utilisateur prend ses décisions de manière autonome et sous sa seule responsabilité.</p>
         <p><strong>Agent automatisé.</strong> L’utilisateur ou l’entité qu’il représente déclare disposer du pouvoir d’engager cette entité et conserve la responsabilité exclusive de la configuration, de la supervision et des décisions de tout agent automatisé agissant en son nom via l’Application. VISIALIS ne fournit ni mandat, ni garantie, ni contrôle sur les décisions d’un tel agent.</p>
 
-        <h2>8. Limitation de responsabilité</h2>
+        <h2>8. MCP hébergé (le cas échéant)</h2>
+        <p>Si et lorsqu’un endpoint MCP hébergé par VISIALIS est proposé, la phase&nbsp;1 est limitée à des outils en lecture seule (read-only). La préparation et la diffusion de transactions restent côté client local ou wallet externe ; elles ne transitent pas par le chemin hébergé en phase&nbsp;1. L’activation d’un tel mode est subordonnée à la completion d’une porte RGPD (notice dédiée, DPIA, DPA/SCC le cas échéant, journalisation technique uniquement) et ne sera pas exposée publiquement tant que cette porte n’est pas validée.</p>
+
+        <h2>9. Place de marché RPC (le cas échéant)</h2>
+        <p>Si et lorsqu’une place de marché ou un annuaire de fournisseurs RPC est proposé, VISIALIS n’opère pas de proxy ni de relais du trafic JSON-RPC des utilisateurs : l’utilisateur communique directement avec le fournisseur choisi. Les fournisseurs vendent le service RPC ; VISIALIS peut facturer aux fournisseurs des redevances B2B de listing ou d’apport d’affaires. VISIALIS ne perçoit pas de commission indexée sur le volume de transferts crypto des utilisateurs. Alter ne règle pas les paiements de la place de marché via <code>eth_sendRawTransaction</code> pour le compte de l’utilisateur. VISIALIS n’est pas CASP du fait de ce listing logiciel.</p>
+
+        <h2>10. Achat de licence / parcours agentique</h2>
+        <p>Si et lorsqu’un parcours d’achat (y compris via un agent automatisé) est proposé, l’objet vendu est un <strong>droit d’usage logiciel / une licence</strong> portant sur des capacités Alter, et non un crypto-actif d’investissement ni un service d’échange. Le paiement est effectué depuis un wallet ou signataire externe de l’acheteur vers VISIALIS ou un Merchant of Record (MoR) / prestataire de paiement agréé. Aucune garde de fonds n’est exercée par Alter. Alter ne fournit pas de service d’échange de crypto-actifs. Si un canal de paiement impose un KYC, ce canal n’est pas proposé plutôt que d’introduire un KYC silencieux dans le parcours.</p>
+
+        <h2>11. Licence NFT / marqueur ERC-8021</h2>
+        <p>Si et lorsqu’un NFT de licence ou un marqueur d’attribution au format ERC-8021 est proposé, le NFT constitue un jeton d’accès à une licence logicielle (utilité d’usage du logiciel). Il ne confère ni rendement (yield), ni gouvernance de trésorerie de protocole, et n’est pas présenté comme un crypto-actif d’investissement. Alter n’opère pas de marché secondaire de revente de ce NFT. Le marqueur d’attribution reste en opt-in tant que le standard ERC-8021 n’est pas stabilisé ; Alter ne publie pas lui-même le marqueur — il ne devient public que si l’utilisateur le fait signer puis diffuser via un signataire externe.</p>
+
+        <h2>12. Limitation de responsabilité</h2>
         <p>L’Application est fournie "en l’état". VISIALIS s’efforce d’assurer la disponibilité et la fiabilité de l’Application mais ne garantit pas l’absence d’erreurs, ni un fonctionnement ininterrompu.</p>
         <p>Dans les limites autorisées par la loi applicable, la responsabilité de VISIALIS est exclue pour : (i) les pertes ou dommages résultant des décisions autonomes de l’utilisateur, notamment ses décisions de signature, de diffusion ou d’abandon d’une transaction ; (ii) les dommages causés par le comportement de tiers sur lesquels VISIALIS n’exerce aucun contrôle, notamment les wallets, signers, fournisseurs RPC, protocoles et réseaux blockchain ; (iii) les dommages indirects, pertes de données, pertes de profits ou préjudices consécutifs.</p>
         <p>La présente limitation ne saurait écarter la responsabilité de VISIALIS en cas de faute lourde ou de dol, ni exclure les droits dont les utilisateurs disposent en tant que consommateurs en vertu du droit applicable.</p>
 
-        <h2>9. Modifications</h2>
+        <h2>13. Modifications</h2>
         <p>Nous nous réservons le droit de modifier les présentes CGU à tout moment. Les modifications entreront en vigueur dès leur publication. Il vous incombe de consulter régulièrement ces conditions.</p>
 
-        <h2>10. Fin d'utilisation</h2>
+        <h2>14. Fin d'utilisation</h2>
         <p>Aucun abonnement n'est requis pour utiliser l'Application. Vous pouvez cesser de l'utiliser librement en la désinstallant ou en fermant l'interface web. VISIALIS se réserve le droit de retirer l'Application ou de suspendre ses mises à jour en cas d'utilisation contraire aux présentes CGU ou susceptible de porter atteinte à la sécurité du service.</p>
 
-        <h2>11. Droit applicable</h2>
+        <h2>15. Droit applicable</h2>
         <p>Les présentes CGU sont régies par le droit français. Tout litige sera soumis à la compétence exclusive des tribunaux de Paris.</p>
 
-        <h2>12. Contact</h2>
+        <h2>16. Contact</h2>
         <div class="contact-info">
             <p>Pour toute question concernant ces CGU, vous pouvez nous contacter :</p>
             <p>

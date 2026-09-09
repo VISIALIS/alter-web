@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="alter-legal-version" content="2026-07-30">
+    <meta name="alter-legal-version" content="2026-09-07">
         <meta name="description" content="Alter Terms of Use and Service.">
     <link rel="canonical" href="https://app.alter-evm.com/terms_en.html">
     <link rel="alternate" hreflang="fr" href="https://app.alter-evm.com/terms.html">
@@ -71,7 +71,7 @@
 <body>
     <div class="container">
         <h1>Terms of Use</h1>
-        <p class="last-updated">Last updated: 30 July 2026 — Contract version: 2026-07-30</p>
+        <p class="last-updated">Last updated: 7 September 2026 — Contract version: 2026-09-07</p>
         <div class="language-switch">
             <a href="terms.html">FR</a> | <span>EN</span> | <a href="terms_es.html">ES</a>
         </div>
@@ -83,7 +83,7 @@
         <p>By downloading, installing or using the Application you agree to be bound by these Terms. If you do not agree, do not use the Application.</p>
 
         <h2>3. Service Description</h2>
-        <p>Alter assists users with the classification and analysis of blockchain addresses on EVM-compatible networks. The Application is available free of charge on the web and via supported mobile distribution platforms.</p>
+        <p>Alter is information and analysis software that assists users with the classification and exploration of addresses and protocols on EVM-compatible networks. Results are provided for informational purposes only. Alter does not constitute investment advice, a personalised recommendation, or a regulated crypto-asset service. For the local tool, VISIALIS does not act as a CASP within the meaning of Regulation (EU) 2023/1114 (MiCA) nor as a PSAN under French law. The Application is available free of charge on the web and via supported mobile distribution platforms; optional features described below may be offered later subject to applicable conditions and legal gates.</p>
 
         <h2>4. Permitted Use</h2>
         <p>You agree to use the Application solely for its intended purpose and in accordance with these Terms. You are not allowed to:</p>
@@ -101,28 +101,40 @@
         <p>Data processing related to Alter is described in our <a href="privacy_en.html">Privacy Policy</a>. In the standard local mode, VISIALIS does not operate an RPC endpoint and does not receive EVM addresses or JSON-RPC parameters: Alter routes requests directly to third-party services selected or enabled by the user, which receive the connection IP address and the request content. VISIALIS may process data voluntarily provided to support, while the GitHub Pages host processes, in particular, the IP addresses of site visitors.</p>
 
         <h2>7. Nature of the Service and Technical Boundaries</h2>
-        <p>Alter is a tool for analyzing and preparing transactions on EVM networks. It never has access to the user's private keys and never signs any transaction.</p>
+        <p>Alter is a tool for analyzing and preparing transactions on EVM networks. It never has access to the user's private keys and never signs any transaction. Alter is non-custodial: VISIALIS does not hold users’ private keys or funds.</p>
         <p>All signatures are performed by a wallet (such as MetaMask, Rabby, Frame, or any other compatible wallet) or an external signer (such as Ledger, Trezor, Keystone, or any other hardware wallet or remote signer) under the control of the user or the entity they represent (natural person, legal entity, or automated agent acting on their behalf).</p>
-        <p>By default, Alter is limited to reading the blockchain. In expert mode, it can prepare transactions or submit already signed transactions via <code>eth_sendRawTransaction</code>. The user (or the entity they represent) retains exclusive control over the signature and the decision to broadcast a transaction or not.</p>
+        <p>By default, Alter is limited to reading the blockchain. In expert mode, it can prepare transactions or submit already signed transactions via <code>eth_sendRawTransaction</code>. The user (or the entity they represent) retains exclusive control over the signature and the decision to broadcast a transaction or not. Any broadcast in expert mode requires the user’s explicit confirmation.</p>
         <p><strong>Expert mode activation.</strong> Expert mode must be explicitly activated by the user. Any transaction broadcast through this mode is irreversible once included in the blockchain. VISIALIS has no control over the broadcast or the effects of the transaction. The user is solely responsible for verifying the content, recipient and amount before signing and broadcasting.</p>
-        <p><strong>No regulated services.</strong> Alter does not provide any investment advice, portfolio management, reception-transmission or execution of orders, custody or administration of crypto-assets, or any other crypto-asset service within the meaning of Regulation (EU) 2023/1114 (MiCA). Information displayed by Alter consists solely of factual on-chain data provided for informational purposes and does not constitute a personalised recommendation or an inducement to acquire, dispose of or hold any asset. The user makes their own decisions and bears full responsibility for them.</p>
+        <p><strong>No regulated services.</strong> Alter does not provide any investment advice, portfolio management, reception-transmission or execution of orders, custody or administration of crypto-assets, or any other crypto-asset service within the meaning of Regulation (EU) 2023/1114 (MiCA). For the local tool, VISIALIS is neither a CASP nor a PSAN. Information displayed by Alter consists solely of factual on-chain data provided for informational purposes and does not constitute a personalised recommendation or an inducement to acquire, dispose of or hold any asset. The user makes their own decisions and bears full responsibility for them.</p>
         <p><strong>Automated agents.</strong> The user or the entity they represent warrants that they have authority to bind that entity and retains exclusive responsibility for the configuration, supervision and decisions of any automated agent acting on their behalf through the Application. VISIALIS provides no mandate, warranty or control over the decisions of such an agent.</p>
 
-        <h2>8. Limitation of Liability</h2>
+        <h2>8. Hosted MCP (if and when offered)</h2>
+        <p>If and when a VISIALIS-hosted MCP endpoint is offered, phase&nbsp;1 is limited to read-only tools. Transaction preparation and broadcast remain on the local client or an external wallet; they do not travel on the hosted path in phase&nbsp;1. Activation of such a mode is subject to completion of a GDPR gate (dedicated notice, DPIA, DPA/SCC as applicable, technical logs only) and will not be publicly exposed until that gate is validated.</p>
+
+        <h2>9. RPC marketplace (if and when offered)</h2>
+        <p>If and when an RPC marketplace or provider directory is offered, VISIALIS does not operate a proxy or relay of users’ JSON-RPC traffic: the user communicates directly with the chosen provider. Providers sell the RPC service; VISIALIS may charge providers B2B listing or referral fees. VISIALIS does not take a commission indexed to users’ crypto transfer volume. Alter does not settle marketplace payments via <code>eth_sendRawTransaction</code> on the user’s behalf. VISIALIS is not a CASP by reason of this software listing.</p>
+
+        <h2>10. Licence purchase / agentic purchase flow</h2>
+        <p>If and when a purchase flow (including via an automated agent) is offered, the object sold is a <strong>software licence / usage right</strong> for Alter capabilities, not an investment crypto-asset or an exchange service. Payment is made from the buyer’s external wallet or signer to VISIALIS or a Merchant of Record (MoR) / authorised payment provider. Alter exercises no custody of funds. Alter does not provide a crypto-asset exchange service. If a payment channel requires KYC, that channel is not offered rather than adding silent KYC to the flow.</p>
+
+        <h2>11. NFT licence / ERC-8021 marker</h2>
+        <p>If and when a licence NFT or an ERC-8021-format attribution marker is offered, the NFT is an access token to a software licence (utility for use of the software). It confers neither yield nor protocol treasury governance, and is not presented as an investment crypto-asset. Alter does not operate a secondary market for resale of that NFT. The attribution marker remains opt-in while the ERC-8021 standard is unstable; Alter does not publish the marker itself — it becomes public only if the user has it signed and then broadcast via an external signer.</p>
+
+        <h2>12. Limitation of Liability</h2>
         <p>The Application is provided “as is”. VISIALIS endeavours to ensure availability and reliability but does not warrant that it will be error-free or available without interruption.</p>
         <p>To the fullest extent permitted by applicable law, VISIALIS's liability is excluded for: (i) losses or damage resulting from the user's own decisions, including decisions to sign, broadcast or abandon a transaction; (ii) damage caused by third parties over which VISIALIS has no control, including wallets, signers, RPC providers, protocols and blockchain networks; (iii) indirect damage, loss of data, loss of profits or consequential loss.</p>
         <p>This limitation does not exclude VISIALIS's liability for gross negligence or wilful misconduct, nor does it affect the rights of consumers under applicable law.</p>
 
-        <h2>9. Amendments</h2>
+        <h2>13. Amendments</h2>
         <p>We reserve the right to amend these Terms at any time. Amendments take effect upon publication. You are responsible for reviewing the Terms periodically.</p>
 
-        <h2>10. End of Use</h2>
+        <h2>14. End of Use</h2>
         <p>No subscription is required to use the Application. You may stop using it at any time by uninstalling it or closing the web interface. VISIALIS reserves the right to withdraw the Application or suspend updates if usage breaches these Terms or poses a security risk.</p>
 
-        <h2>11. Governing Law</h2>
+        <h2>15. Governing Law</h2>
         <p>These Terms are governed by French law. Any dispute shall fall under the exclusive jurisdiction of the courts of Paris, France. In the event of any discrepancy between the French version and this English translation, the French version shall prevail.</p>
 
-        <h2>12. Contact</h2>
+        <h2>16. Contact</h2>
         <div class="contact-info">
             <p>For any question regarding these Terms, please contact:</p>
             <p>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="alter-legal-version" content="2026-07-30">
+    <meta name="alter-legal-version" content="2026-09-07">
         <meta name="description" content="Política de privacidad de Alter — Tratamiento de datos y privacidad.">
     <link rel="canonical" href="https://app.alter-evm.com/privacy_es.html">
     <link rel="alternate" hreflang="fr" href="https://app.alter-evm.com/privacy.html">
@@ -68,7 +68,7 @@
 <body>
     <div class="container">
         <h1>Política de privacidad</h1>
-        <p class="last-updated">Última actualización: 30 de julio de 2026</p>
+        <p class="last-updated">Última actualización: 7 de septiembre de 2026</p>
         <div class="language-switch">
             <span>ES</span> | <a href="privacy_en.html">EN</a> | <a href="privacy.html">FR</a>
         </div>
@@ -77,15 +77,15 @@
         <p>
             VISIALIS, SAS con capital de 200&nbsp;000&nbsp;€, inscrita en el RCS de París con número 478&nbsp;885&nbsp;122,<br>
             OFICINA&nbsp;326, 59 rue de Ponthieu, 75008 París.<br>
-            Contacto relativo a la protección de datos: <a href="mailto:contact@visialis.fr">contact@visialis.fr</a>.
+            Contacto relativo a la protección de datos y ejercicio de derechos RGPD: <a href="mailto:contact@visialis.fr">contact@visialis.fr</a>.
         </p>
 
         <h2>Ámbito y modo local actual</h2>
         <p>
-            Alter funciona actualmente en modo local, sin cuenta de usuario, sin endpoint RPC operado por VISIALIS y sin endpoint MCP remoto alojado por VISIALIS. Los análisis, configuraciones y pruebas de propiedad permanecen en el dispositivo, salvo cuando una función solicitada por el usuario requiere una comunicación directa con un servicio tercero descrito a continuación.
+            Alter funciona actualmente en modo local, sin cuenta de usuario, sin endpoint RPC operado por VISIALIS y sin endpoint MCP remoto alojado por VISIALIS. El tratamiento de los datos de análisis se realiza principalmente en el dispositivo. Los análisis, configuraciones y pruebas de propiedad permanecen en el dispositivo, salvo cuando una función solicitada por el usuario requiere una comunicación directa con un servicio tercero descrito a continuación. Por defecto, VISIALIS no proporciona alojamiento de negocio de los datos de uso.
         </p>
         <p>
-            En el flujo local estándar, las direcciones EVM consultadas, los parámetros JSON-RPC y las firmas del wallet no se envían a VISIALIS. Alter no conserva claves privadas y nunca solicita al usuario que comunique una frase de recuperación.
+            En el flujo local estándar, las direcciones EVM consultadas, los parámetros JSON-RPC y las firmas del wallet no se envían a VISIALIS. Alter no conserva claves privadas y nunca solicita al usuario que comunique una frase de recuperación. Los proveedores RPC terceros elegidos por el usuario pueden, no obstante, ver la dirección IP de conexión y los parámetros de la solicitud.
         </p>
         <p>Para aspectos contractuales, consulte los <a href="terms_es.html">Términos y Condiciones de Uso</a>.</p>
 
@@ -103,6 +103,11 @@
         </p>
         <p>
             El código de la aplicación no envía al servidor de alojamiento las direcciones EVM consultadas, los parámetros RPC ni las pruebas de firma. VISIALIS no opera ningún proxy de aplicación en este trayecto.
+        </p>
+
+        <h2>Modo alojado (futuro / si se activa)</h2>
+        <p>
+            Si y cuando se active un modo alojado (por ejemplo un endpoint MCP remoto operado por VISIALIS), se publicará un aviso de privacidad dedicado antes de la exposición pública. En ese marco: alojamiento en la Unión Europea o, en su caso, transferencias enmarcadas por cláusulas contractuales tipo (SCC); registros técnicos únicamente (marca temporal, sesión anonimizada, herramienta, estado, latencia, error); retención de registros técnicos ≤&nbsp;30&nbsp;días con purga demostrada; sin payloads de negocio completos en claro en los registros. La activación permanece subordinada a la puerta RGPD documentada (DPIA, DPA de encargados, checklist interna).
         </p>
 
         <h2>Conexiones de red</h2>
@@ -123,12 +128,20 @@
             El usuario puede sustituir o eliminar los endpoints sugeridos y utilizar sus propios proveedores. VISIALIS no controla las políticas, los plazos de conservación ni los lugares de tratamiento de los proveedores elegidos. Algunos pueden tratar los datos fuera del Espacio Económico Europeo. El usuario debe consultar sus políticas de privacidad antes de utilizarlos.
         </p>
 
-        <h2>Datos públicos on-chain y prototipo de atribución</h2>
+        <h2>Datos públicos on-chain, marcador de atribución y licencia NFT</h2>
         <p>
             Una dirección, una transacción y los datos inscritos en una blockchain pública pueden vincularse con una persona y permanecer accesibles durante un largo periodo. VISIALIS no puede modificar ni suprimir los datos ya inscritos en una blockchain.
         </p>
         <p>
-            Las herramientas CLI y MCP que exponen el prototipo <code>transaction.prepare</code> pueden añadir a un payload no firmado un marcador público de atribución en formato ERC-8021, propuesta que todavía se encuentra en fase de borrador. Alter no publica por sí mismo este marcador. Solo se hace público si el usuario hace firmar el payload por un firmante externo y después difunde la transacción. La aplicación Web no ofrece actualmente ningún flujo para preparar o publicar este marcador.
+            Las herramientas CLI y MCP que exponen el prototipo <code>transaction.prepare</code> pueden añadir a un payload no firmado un marcador público de atribución en formato ERC-8021, propuesta que todavía se encuentra en fase de borrador. Alter no publica por sí mismo este marcador. Solo se hace público si el usuario hace firmar el payload por un firmante externo y después difunde la transacción. Mientras el estándar no esté estabilizado, el marcador permanece en opt-in / voluntario. La aplicación Web no ofrece actualmente ningún flujo para preparar o publicar este marcador.
+        </p>
+        <p>
+            Si y cuando se ofrezca una licencia NFT, la verificación de entitlement puede basarse en datos on-chain (identificador de token, dirección titular, metadatos técnicos de acceso a la licencia). Dichos datos son públicos una vez inscritos. El NFT constituye un token de acceso a una licencia de software; no confiere rendimiento ni gobernanza de tesorería del protocolo.
+        </p>
+
+        <h2>Pruebas de compra agentica / licencia</h2>
+        <p>
+            Si y cuando se ofrezca un recorrido de compra de licencia (incluido mediante un agente automatizado), VISIALIS puede tratar, en la medida necesaria para verificar el derecho de uso: el hash de la transacción de pago, la dirección pagadora, el importe y la red afectados, así como el entitlement / token de licencia asociado. Estos elementos sirven para constatar la adquisición de la licencia y permitir su verificación; no constituyen custodia de fondos por Alter.
         </p>
 
         <h2>Almacenamiento local y rastreadores</h2>
@@ -149,7 +162,7 @@
 
         <h2>Derechos de las personas</h2>
         <p>
-            Respecto de los datos que VISIALIS posee efectivamente, incluidas las solicitudes de soporte, las personas pueden solicitar el acceso, rectificación, supresión, limitación u oposición cuando estos derechos sean aplicables, escribiendo a <a href="mailto:contact@visialis.fr">contact@visialis.fr</a>. También pueden presentar una reclamación ante la autoridad francesa de protección de datos, la <a href="https://www.cnil.fr/">CNIL</a>.
+            Respecto de los datos que VISIALIS posee efectivamente, incluidas las solicitudes de soporte y, en su caso, las pruebas necesarias para la verificación de licencia, las personas pueden solicitar el acceso, rectificación, supresión, limitación, portabilidad u oposición cuando estos derechos sean aplicables, escribiendo a <a href="mailto:contact@visialis.fr">contact@visialis.fr</a>. También pueden presentar una reclamación ante la autoridad francesa de protección de datos, la <a href="https://www.cnil.fr/">CNIL</a>.
         </p>
         <p>
             Los datos almacenados únicamente en el dispositivo están bajo el control del usuario. Las solicitudes relativas a los registros de GitHub Pages, un proveedor RPC, un explorador o un wallet deben dirigirse al tercero correspondiente. La eliminación local no puede suprimir datos ya publicados en una blockchain.
@@ -157,7 +170,7 @@
 
         <h2>Evolución del servicio y de la política</h2>
         <p>
-            Esta política se actualiza cuando cambian los tratamientos o el marco legal. Si VISIALIS introduce un endpoint RPC, un endpoint MCP remoto, una cuenta, una función de pago u otro modo alojado, los nuevos tratamientos, bases jurídicas, plazos de conservación, destinatarios y derechos se documentarán antes de su activación y se comunicarán a los usuarios.
+            Esta política se actualiza cuando cambian los tratamientos o el marco legal. Si VISIALIS introduce un endpoint RPC, un endpoint MCP remoto, una cuenta, una función de pago, una licencia NFT u otro modo alojado, los nuevos tratamientos, bases jurídicas, plazos de conservación, destinatarios y derechos se documentarán antes de su activación y se comunicarán a los usuarios, incluido mediante un aviso dedicado cuando el modo alojado lo exija.
         </p>
     </div>
 </body>
