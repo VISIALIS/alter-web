@@ -65,7 +65,9 @@
 
   <!-- #310 Security headers HTTP (CSP, XFO, XCTO, RP, PP, HSTS) :
        - netlify.toml + alter/web/_headers (Netlify / Cloudflare Pages)
-       - docs/deployment/web-security-headers.md (Cloudflare devant GitHub Pages)
+       - Derrière Cloudflare devant GitHub Pages : reproduire les mêmes en-têtes
+         (procédure de déploiement web — référence volontairement omise ici, ce
+         fichier étant publié tel quel dans l'artefact web public)
        Ne PAS ajouter de CSP en <meta> ici : insuffisant pour frame-ancestors/HSTS
        et peut entrer en conflit avec les headers serveur. -->
 
