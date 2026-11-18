@@ -11,11 +11,11 @@
     "related_applications": [
         {
             "platform": "itunes",
-            "url": "https://apps.apple.com/"
+            "url": "https://www.alter-evm.com/get/"
         },
         {
             "platform": "play",
-            "url": "https://play.google.com/store"
+            "url": "https://play.google.com/store/apps/details?id=com.visialis.alter"
         }
     ],
     "icons": [
